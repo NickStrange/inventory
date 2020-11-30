@@ -7,10 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { InventoryComponent } from './inventory/inventory.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InventoryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

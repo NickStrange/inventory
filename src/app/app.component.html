@@ -7,11 +7,11 @@
 <button mat-button [matMenuTriggerFor]='menu'>Menu</button>
 
 <mat-menu #menu="matMenu">
-    <button mat-menu-item>
+    <button mat-menu-item routerLink="inventory">
         <mat-icon>photo</mat-icon>
         <span>Inventory</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item outerLink="contacts">
         <mat-icon>people</mat-icon>
         <span>Contacts</span>
     </button>
@@ -24,3 +24,5 @@
         <span>Logoff</span>
     </button>
 </mat-menu>
+
+<router-outlet></router-outlet>
