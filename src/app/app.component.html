@@ -1,1 +1,26 @@
 <h3>Hello World</h3>
+
+<mat-slider min="1" max="100" value="50"></mat-slider>
+
+<p></p>
+
+<button mat-button [matMenuTriggerFor]='menu'>Menu</button>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>
+        <mat-icon>photo</mat-icon>
+        <span>Inventory</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>people</mat-icon>
+        <span>Contacts</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>lock_open</mat-icon>
+        <span>Logon</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>lock</mat-icon>
+        <span>Logoff</span>
+    </button>
+</mat-menu>
